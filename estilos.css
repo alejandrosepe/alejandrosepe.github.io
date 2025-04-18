@@ -1,8 +1,9 @@
-body{
+body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
 }
-header{
+
+header {
     height: 65px;
     background-color: #7b1fa2;
     color: white;
@@ -10,11 +11,13 @@ header{
     align-items: center;
     padding-left: 25px;
 }
-.cara{
-    border-radius: 500px;
+
+.cara {
+    border-radius: 50%;
     height: 200px;
 }
-.uno{
+
+.uno {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -22,9 +25,9 @@ header{
     height: calc(100vh - 65px);
     background-color: #303030;
     color: white;
-    /* padding-top: 10%; */
 }
-.caja-central{
+
+.caja-central {
     margin-top: 10%;
     width: 50%;
     display: flex;
@@ -33,14 +36,16 @@ header{
     overflow: hidden;
     height: 50%;
 }
-.caja-cara{
+
+.caja-cara {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 40%;
     background-color: #424242;
 }
-.caja-presentacion{
+
+.caja-presentacion {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,7 +55,7 @@ header{
     padding: 10px;
 }
 
-.dos{
+.dos {
     background-color: #F2F2F2;
     height: 700px;
     display: flex;
@@ -58,109 +63,132 @@ header{
     justify-content: center;
     align-items: center;
     color: #303030;
-    padding-left: 20%;
-    padding-right: 20%;
+    padding: 0 20%;
 }
-.aptitudes{
+
+.aptitudes {
     width: 50%;
 }
-.tech-list{
+
+.tech-list {
     display: flex;
     justify-content: space-between;
     padding-top: 10px;
 }
 
-.tech{
+.tech {
     height: 90px;
 }
 
-.tres{
+.tres {
     background-color: #303030;
-    height: 600px;
+    height: auto;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
     align-items: center;
     color: #F2F2F2;
+    padding-bottom: 20px;
 }
-.proyectos{
+
+.proyectos {
     width: 60%;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
-.card{
+
+.card {
     text-align: center;
     width: 30%;
     border: solid #F2F2F2 1px;
     border-radius: 10px;
     padding: 10px;
-}
-.card img{
-    width: 100%;
-}
-.card a, footer a {
-    color: white;
+    margin-bottom: 20px;
 }
 
-.red-social{
-    height: 60px;
-    background-color: #F2F2F2;
+.card img {
+    width: 100%;
     border-radius: 10px;
 }
 
-footer{
+.card a, footer a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.card a:hover, footer a:hover {
+    color: #7b1fa2;
+}
+
+.red-social {
+    height: 60px;
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.red-social:hover {
+    transform: scale(1.1);
+}
+
+footer {
     background-color: #424242;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     color: #F2F2F2;
-    height: 250px;
+    height: auto;
+    padding: 20px 0;
 }
-.contacto{
+
+.contacto {
     width: 30%;
     display: flex;
     justify-content: center;
 }
 
 @media (max-width: 1000px) {
-    .caja-central{
+    .caja-central {
         width: 90%;
-        height: 70%;
+        height: auto;
         flex-direction: column;
     }
-    .caja-cara{
+
+    .caja-cara {
         width: 100%;
-        height: 50%;
+        height: auto;
     }
-    .caja-presentacion{
+
+    .caja-presentacion {
         width: 100%;
-        height: 50%;
+        height: auto;
         align-items: flex-start;
     }
-    .aptitudes{
+
+    .aptitudes {
         width: auto;
     }
-    .dos{
-        height: auto;
-        padding: 0 10px 10px 10px;
 
-    }
-    .tres{
+    .dos {
         height: auto;
+        padding: 0 10px;
     }
-    .proyectos{
+
+    .proyectos {
         flex-direction: column;
         width: 100%;
         align-items: center;
         justify-content: space-between;
-        padding-bottom: 20px;
     }
-    .card{
+
+    .card {
         width: 80%;
-        margin-top: 20px;
     }
-    .red-social{
-        margin: 0 10px 0 10px;
+
+    .red-social {
+        margin: 0 10px;
     }
 }
